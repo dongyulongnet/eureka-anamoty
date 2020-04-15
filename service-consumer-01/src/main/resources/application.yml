@@ -1,0 +1,11 @@
+server:
+  port: 41305
+
+spring:
+  application:
+    name: service-consumer-01
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.80:41301/eureka/

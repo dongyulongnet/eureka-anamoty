@@ -1,0 +1,14 @@
+server:
+  port: 41301
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    service-url:
+      # 注意不能写成default-zone，不支持脊柱命名法
+      defaultZone: http://192.168.1.80:41302/eureka/,http://192.168.1.80:41313/eureka/
+#  instance:
+#    prefer-ip-address: true
